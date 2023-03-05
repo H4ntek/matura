@@ -1,7 +1,5 @@
 in1 = open("liczby.txt", "r+")
-a = []
-for line in in1:
-    a.append(int(line.strip()))
+a = [int(x) for x in in1]
 
 # 59.1.
 def factorize(x):
